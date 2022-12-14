@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/exhibition.iml" filepath="$PROJECT_DIR$/.idea/modules/exhibition.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/exhibition.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/exhibition.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/exhibition.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/exhibition.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/exhibition.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/exhibition.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/exhibition.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/exhibition.app.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/posenet/exhibition.posenet.iml" filepath="$PROJECT_DIR$/.idea/modules/posenet/exhibition.posenet.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/posenet/exhibition.posenet.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/posenet/exhibition.posenet.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/posenet/exhibition.posenet.main.iml" filepath="$PROJECT_DIR$/.idea/modules/posenet/exhibition.posenet.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/posenet/exhibition.posenet.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/posenet/exhibition.posenet.unitTest.iml" />
+    </modules>
+  </component>
+</project>

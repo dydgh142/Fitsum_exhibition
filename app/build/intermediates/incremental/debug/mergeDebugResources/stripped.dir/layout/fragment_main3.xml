@@ -1,0 +1,152 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="org.fitsum.Fragment.Main3Fragment"
+    android:orientation="vertical"
+    tools:ignore="Orientation">
+
+    <!-- 상단바 -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="70sp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="20sp"
+            android:text="게시판"
+            android:textColor="@color/black_2"
+            android:textSize="23sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <ImageButton
+            android:id="@+id/write"
+            android:layout_width="33sp"
+            android:layout_height="33sp"
+            android:background="@drawable/pencil"
+            android:layout_marginTop="20sp"
+            android:layout_marginEnd="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- 라인 -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="4sp"
+        android:background="@color/color_text"/>
+
+    <!-- 게시판 목록 -->
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/round_background"
+        android:layout_margin="10sp"
+        android:padding="8sp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="4dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="11dp"
+                android:layout_marginLeft="18.3dp"
+                android:layout_marginTop="11dp"
+                android:layout_marginEnd="11dp"
+                android:layout_marginRight="18.7dp"
+                android:layout_marginBottom="11dp"
+                app:cardBackgroundColor="#EFEFEF"
+                app:cardCornerRadius="7dp"
+                tools:ignore="MissingConstraints">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10sp"
+                    android:padding="5sp">
+
+                    <TextView
+                        android:id="@+id/title_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="test Title"
+                        android:layout_marginStart="5sp"
+                        android:textColor="@color/black_2"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toTopOf="@+id/content_tv"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/name_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="5sp"
+                        android:layout_marginBottom="5sp"
+                        android:text="user Name"
+                        android:textColor="@color/black_2"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toTopOf="@+id/content_tv"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/content_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="50sp"
+                        android:hint="content"
+                        android:paddingStart="8sp"
+                        android:paddingTop="7sp"
+                        android:paddingEnd="8sp"
+                        android:paddingBottom="3sp"
+                        android:textColor="@color/black_2"
+                        android:textSize="18sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/writeDate"
+                        app:layout_constraintStart_toStartOf="parent" />
+
+                    <TextView
+                        android:id="@+id/writeDate"
+                        android:layout_width="80sp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="3dp"
+                        android:text="2022.11.28"
+                        android:textSize="15sp"
+                        app:layout_constraintBottom_toTopOf="@+id/content_tv"
+                        app:layout_constraintEnd_toStartOf="@+id/name_tv"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.571" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:text="※ 예시 화면이며 현재 핸드폰에서 게시글이 작성되진 않습니다."
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>
