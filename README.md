@@ -6,7 +6,7 @@
 
 'FitSum'은 Tensorflow의 Posenet을 이용하여 사용자의 자세를 인식해 올바른 운동 자세를 갖게 하고, 꾸준한 동기부여 환경을 제공해주는 게임형 운동 어플이다. 
 
-<div align=right> <img src="./images/logo.png" style="width:120px" height="110px"></div>
+<div align=right> <img src="./images/logo.png" style="width:110px" height="110px"></div>
 ## PoseNet
 
 - PoseNet은 주요 신체 관절의 위치를 예측하여 이미지 또는 비디오에서 사람의 포즈를 예측하는 데 사용할 수 있는 비전 모델이다.
